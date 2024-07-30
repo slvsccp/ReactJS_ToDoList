@@ -1,6 +1,8 @@
 import Task from "./Task";
 
-function TaskList({ tasks, onDeleteTask }) {
+function TaskList({ tasks, onDeleteTask, onToggleTaskDone }) {
+  if (tasks.length === 0) return <p style={{ textAlign: "center" }}>Não há registros.</p>
+
   return (
     <ul>
       {
@@ -9,6 +11,7 @@ function TaskList({ tasks, onDeleteTask }) {
             key={task.id}
             task={task}
             onDelete={() => onDeleteTask(task.id)}
+            onToggleDone={() => onToggleTaskDone(task.id)}
           />
         ))
       }

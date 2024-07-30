@@ -45,6 +45,10 @@ li {
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
+
+  & span {
+    cursor: pointer;
+  }
 }
 
 button {
