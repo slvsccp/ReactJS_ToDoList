@@ -7,6 +7,12 @@ body {
   justify-content: center;
 }
 
+#root {
+  border: 1px solid #c4c4c4;
+  border-radius: 15px;
+  padding: 10px;
+}
+
 h1 {
   color: #333;
   text-align: center;
@@ -23,6 +29,7 @@ ul {
 }
 
 input[type="text"] {
+  width: 57%;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
